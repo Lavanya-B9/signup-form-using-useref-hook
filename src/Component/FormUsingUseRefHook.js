@@ -40,16 +40,11 @@ const FormUsingUseRefHook = () => {
       errors.confirm_password = "password and confirm password must match";
     }
     setFormErrors(errors);
-    if(Object.keys(errors).length === 0){
+    if (Object.keys(errors).length === 0) {
       console.log(formData);
       e.target.reset();
-      alert("signed in successfully")
-      
+      alert("Signed in Successfully");
     }
-
-   
-    
-    
   };
   return (
     <div className="container">
